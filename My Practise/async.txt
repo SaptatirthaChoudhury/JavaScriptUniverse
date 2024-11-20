@@ -1,0 +1,18 @@
+const promise = new Promise((resolve, reject) => {
+  // Do some asynchronous work (e.g. make an HTTP request)
+  const result = doSomeAsyncWork();
+  if (result) {
+    // If the asynchronous work was successful, resolve the promise
+    resolve(result);
+  } else {
+    // If the asynchronous work was unsuccessful, reject the promise
+    reject(new Error('Async work failed'));
+  }
+});
+
+// Use the `then` method to handle the resolved value
+promise.then((result) => {
+  console.log(`Promise resolved with value: ${result}`);
+}).catch((error) => {
+  console.error(`Promise rejected with error: ${error}`);
+});
