@@ -16,7 +16,7 @@ function person(name,department){
     this.name = "Babai",
     this.department = "Machine learning"
 }
-const obj1 = new person();
+const obj3 = new person();
 console.log(obj1);
 
 class Coder {
@@ -28,10 +28,10 @@ class Coder {
 
 }
 
-const obj1 = new Coder("CPP", "JavaScript");
+const obj4 = new Coder("CPP", "JavaScript");
 console.log(obj1,typeof obj1);
 
-const obj2 =  new Coder(); // we didn't pass the argument
+const obj5 =  new Coder(); // we didn't pass the argument
 console.log(obj2,typeof obj2);
 
 
